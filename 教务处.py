@@ -37,13 +37,13 @@ def encodeInp(instr):
     return outstr
 
 def getPassKey(username, password):
-    encodeInp_username = encodeInp("2014022125")
-    encodeInp_password = encodeInp("10012718")
+    encodeInp_username = encodeInp("你的学号")
+    encodeInp_password = encodeInp("你的密码")
     passKey = encodeInp_username+"%%%"+encodeInp_password
     print(passKey)
     return passKey
 
-def getcontent(username = "2014022125", password = "10012718"):
+def getcontent(username = "你的学号", password = "你的密码"):   #密码是身份证后八位或者自己设置的
     headers = {
         'User-Agent':
             'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.61 Safari/537.36',
